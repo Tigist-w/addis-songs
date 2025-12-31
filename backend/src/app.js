@@ -8,7 +8,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.use("/songs", songRoutes);
-app.use("/stats", statsRoutes);
+app.use("/api/songs", songRoutes);
+app.use("/api/stats", statsRoutes);
 
 export default app;
